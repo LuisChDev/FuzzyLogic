@@ -1,0 +1,30 @@
+* Antecedentes
+** Tamaño
+*** Universo: qué tan grande es la casa?
+    [40, 800][m^2]
+*** conjunto difuso
+    [Pequeña, Mediana, Grande]
+** Distancia
+*** Universo: Qué tan lejos está del centro?
+    [1, 15][km]
+*** conjunto difuso
+    [Cerca, Lejos, Afueras]
+* Consecuentes
+** Precio 
+*** Universo: Qué tanto costará la casa?
+    [70, 3000][Mpesos]
+*** conjunto difuso
+    [Bajo, Medio, Alto]
+* Reglas
+  | Tamaño/Distancia | Cerca | Lejos | Afueras |
+  |------------------+-------+-------+---------|
+  | Grande           | Alto  | Alto  | Alto    |
+  | Mediana          | Alto  | Medio | Bajo    |
+  | Pequeña          | Alto  | Medio | Bajo    |
+
+** Si la casa ES grande, el precio ES alto.
+** Si la casa ESTÁ cerca del centro, el precio ES alto.
+** Si la casa ES media O pequeña y ESTÁ lejos del centro,
+   el precio ES medio.
+** Si la casa ES media O pequeña y ESTÁ en las afueras,
+   el precio ES bajo.
